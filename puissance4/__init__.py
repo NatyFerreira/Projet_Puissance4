@@ -1,7 +1,3 @@
-## ▶️ Como executar
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/NatyFerreira/Projet_Puissance4.git
+# Permite que o diretório seja tratado como um pacote Python
+pass
 
