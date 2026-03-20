@@ -1,20 +1,7 @@
-class Board:
-    def __init__(self, rows=6, cols=7):
-        self.rows = rows
-        self.cols = cols
-        self.grid = [[" " for _ in range(cols)] for _ in range(rows)]
+## ▶️ Como executar
 
-    def display(self):
-        for row in self.grid:
-            print("| " + " | ".join(row) + " |")
-        print("  " + "   ".join(str(i) for i in range(self.cols)))
+1. Clone o repositório:
 
-    def is_valid_move(self, col):
-        return self.grid[0][col] == " "
+```bash
+git clone https://github.com/NatyFerreira/Projet_Puissance4.git
 
-    def drop_pawn(self, col, symbol):
-        for row in reversed(self.grid):
-            if row[col] == " ":
-                row[col] = symbol
-                return True
-        return False
